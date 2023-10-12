@@ -10,26 +10,35 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="product.html">Home</a></li>
-            <li><a href="product-form.html">Create Product</a></li>
-            <li><a href="order.html">Order</a></li>
-        </ul>
+        <h3>Belajar Mock API</h3>
     </nav>
-    <div class="container p-4">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Total Price</th>
-                </tr>
-            </thead>
-            <tbody id="table-order-body">
-            </tbody>
-        </table>
+
+    <div id="container">
+        <div class="sidebar">
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Products</a>
+            <a href="order.html">Orders</a>
+            <a href="user.html">Users</a>
+        </div>
+
+        <div class="main">
+            <h2>Orders</h2>
+            <p>Here's a list of our orders:</p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="table-order-body">
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div class="modal" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel"

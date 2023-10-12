@@ -35,10 +35,7 @@ function productComponent(product) {
           <hs class="card-title">${product.name}</hs>
           <p class="card-text">${product.description}</p>
           <p class="card-text">$${product.price}</p>
-          <div class="row justify-content-end px-2" style="gap: 8px">
-            <a onclick="deleteProduct('${product.id}')" class="btn btn-danger mt-2 float-right">Delete</a>
-            <a href="product-edit.html?product_id=${product.id}" class="btn btn-warning mt-2 float-right">Edit</a>
-          </div>
+          <a href="buy.html?product_id=${product.id}" class="btn btn-primary mt-2 float-right">Buy Now</a>
       </div>
     </div>
   `;
@@ -54,7 +51,3 @@ function setProducts(products) {
 }
 
 getProducts();
-
-function deleteProduct(productId) {
-  alert(`DELETE ${productId}`)
-}
